@@ -71,11 +71,15 @@
       <li><strong>Portainer</strong> - your self-hosted Portainer instance</li>
       <li><strong>Uptime Kuma</strong> - your self-hosted Uptime Kuma instance</li>
       <li><strong>Dell iDRAC</strong> - your server's out-of-band management interface</li>
+      <li><strong>Pi-hole</strong> - your self-hosted Pi-hole instance</li>
+      <li><strong>Tailscale</strong> - the Tailscale API at api.tailscale.com, using an API key you provide, to retrieve your device list</li>
       <li><strong>SSH</strong> - direct shell access to servers you configure</li>
+      <li><strong>Wake on LAN relay</strong> - an optional HTTP endpoint you configure on your own network</li>
     </ul>
     <p>
-      All communication is between your device and your own servers. The developer receives
-      no data from these connections.
+      With the exception of Tailscale (which uses Tailscale's own cloud API), all communication
+      is between your device and your own self-hosted servers. The developer receives no data
+      from any of these connections.
     </p>
 
     <h2>Push Notifications</h2>
