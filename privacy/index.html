@@ -97,9 +97,20 @@
       <li><strong>Wake on LAN relay</strong> - an optional HTTP endpoint you configure on your own network</li>
     </ul>
     <p>
-      With the exception of Tailscale (which uses Tailscale's own cloud API), all communication
-      is between your device and your own self-hosted servers. The developer receives no data
-      from any of these connections.
+      The app also includes network diagnostic tools that, when used, may contact third-party
+      services outside your own infrastructure:
+    </p>
+    <ul>
+      <li><strong>WHOIS / ASN Lookup</strong> - when you look up an IP address, the app queries
+        <strong>ipapi.co</strong> to retrieve ASN, organization, and geolocation data. When you
+        look up a domain name, the app queries <strong>rdap.org</strong> to retrieve registration
+        information via the RDAP protocol. These lookups are user-initiated and only occur when
+        you actively use the WHOIS tool. The IP or domain you look up is sent to these services.</li>
+    </ul>
+    <p>
+      With the exception of Tailscale (which uses Tailscale's own cloud API) and the optional
+      WHOIS lookup tool described above, all communication is between your device and your own
+      self-hosted servers. The developer receives no data from any of these connections.
     </p>
 
     <h2>Push Notifications</h2>
